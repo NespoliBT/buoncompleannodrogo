@@ -43,3 +43,20 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+img {
+  width: 50%;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
